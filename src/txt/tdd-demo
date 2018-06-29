@@ -1,0 +1,11 @@
+编写一个函数，返回小于给定max的所有素数组成的数组
+
+public static int[] getPrimes(int max);
+
+任务分解
+
+边界条件
+getPrimes(0),(-1),(2) 返回值
+
+正常输入
+getPrimes（9），getPrimes（30）
