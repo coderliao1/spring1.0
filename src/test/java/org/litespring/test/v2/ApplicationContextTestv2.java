@@ -16,7 +16,8 @@ public class ApplicationContextTestv2 {
     public void testGetBeanProperty(){
         ApplicationContext ctx = new ClassPathXmlApplicationContext("petStore-v2.xml");
         PetStoreService petStore = (PetStoreService)ctx.getBean("petStore");
-
+/*新增
+* */
         assertNotNull(petStore.getAccountDao());
         assertNotNull(petStore.getItemDao());
 
