@@ -47,7 +47,7 @@ public class ResourceTest {
 
 
 
-		Resource r = new FileSystemResource("D:\\IDEA\\IdeaProjects\\spring10\\src\\main\\resources\\petStore-v1.xml");
+		Resource r = new FileSystemResource("D:\\IDEA\\IdeaProjects\\spring10\\src\\test\\resources\\petStore-v1.xml");
 
 
 

@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4" />
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/test/resources/petStore-v1.xml</file>
+          <file>file://$MODULE_DIR$/src/test/resources/petStore-v2.xml</file>
+          <file>file://$MODULE_DIR$/src/test/resources/petStore-v3.xml</file>
+          <file>file://$MODULE_DIR$/src/test/resources/petstore-v4.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+</module>

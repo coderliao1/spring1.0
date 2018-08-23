@@ -12,7 +12,10 @@ public class FileSystemResource implements Resource {
     private final File file;
 
 
-
+    public FileSystemResource(File file) {
+        this.path = file.getPath();
+        this.file = file;
+    }
 
 
     public FileSystemResource(String path) {
