@@ -10,4 +10,5 @@ import org.litespring.test.v4.V4ALLTests;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({V1ALLTests.class,V2ALLTests.class,V3ALLTests.class,V4ALLTests.class})
 public class AllTests {
+
 }

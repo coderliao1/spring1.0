@@ -6,4 +6,6 @@ public interface BeanFactory {
    // BeanDefinition getBeanDefinition(String beanID);
     //由BeanDefinitionRegistry实现
     Object getBean(String beanID);
+
+    Class<?> getType(String name) throws NoSuchBeanDefinitionException;
 }
