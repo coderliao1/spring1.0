@@ -47,5 +47,8 @@ public class PetStoreService {
 
 
     }
+    public void placeOrderWithException(){
+    throw new NullPointerException();
+    }
 
 }
