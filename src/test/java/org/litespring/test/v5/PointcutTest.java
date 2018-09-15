@@ -3,7 +3,7 @@ package org.litespring.test.v5;
 import org.junit.Assert;
 import org.junit.Test;
 import org.litespring.aop.MethodMatcher;
-import org.litespring.aop.aspectJ.AspectJExpressionPointcut;
+import org.litespring.aop.aspectj.AspectJExpressionPointcut;
 import org.litespring.service.v5.PetStoreService;
 
 import java.lang.reflect.Method;

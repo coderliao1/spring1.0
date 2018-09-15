@@ -1,30 +1,42 @@
-package org.litespring.test.v5;
-
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.litespring.context.ApplicationContext;
-import org.litespring.context.support.ClassPathXmlApplicationContext;
-import org.litespring.service.v5.PetStoreService;
-import org.litespring.util.MessageTracker;
-
+package org.litespring.test.v6;
 import java.util.List;
 
-public class ApplicationContextTest5 {
 
-    @Before
-    public void setUp(){
-        MessageTracker.clearMsgs();
-    }
+
+import org.junit.Assert;
+
+import org.junit.Before;
+
+import org.junit.Test;
+
+import org.litespring.context.ApplicationContext;
+
+import org.litespring.context.support.ClassPathXmlApplicationContext;
+
+import org.litespring.service.v6.IPetStoreService;
+
+import org.litespring.util.MessageTracker;
+
+
+
+public class ApplicationContextTest6 {
+
+
+
+
+
+
 
     @Test
-    public void testPlaceOrder(){
-        ApplicationContext ctx= new ClassPathXmlApplicationContext("petstore-v5.xml");
-        PetStoreService petStore = (PetStoreService)ctx.getBean("petStore");
 
-        Assert.assertNotNull(petStore.getAccountDao());
+    public void testGetBeanProperty() {
 
-        Assert.assertNotNull(petStore.getItemDao());
+
+
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("petstore-v6.xml");
+
+        IPetStoreService petStore = (IPetStoreService)ctx.getBean("petStore");
+
 
 
         petStore.placeOrder();
@@ -42,5 +54,23 @@ public class ApplicationContextTest5 {
         Assert.assertEquals("place order", msgs.get(1));
 
         Assert.assertEquals("commit tx", msgs.get(2));
+
+
+
     }
+
+
+
+    @Before
+
+    public void setUp(){
+
+        MessageTracker.clearMsgs();
+
+    }
+
+
+
+
+
 }

@@ -1,4 +1,4 @@
-package org.litespring.aop.aspectJ;
+package org.litespring.aop.aspectj;
 import java.lang.reflect.Method;
 
 import java.util.HashSet;
